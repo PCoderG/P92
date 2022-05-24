@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mathz Me Game Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="lmin">
+	
+<div class="container" >
+	<h4 id="player1_name"></h4>
+		<span id="player1_score">
+		</span>
+		<br>
+		<h4 id="player2_name"></h4>
+		<span id="player2_score">
+		</span>
+	<center>
+		
+
+		
+		<h2 style="color: black;">Mathz Me</h2>
+	<h3 id="player_question"></h3>
+	<h3 id="player_answer"></h3>
+
+		<br>
+		<br>
+		<div id="output" class="col-lg-6"></div>
+		<label id="Number-come-number-go">Send Your Number: <b style="color: red" id="Number">Try putting Number which has 1 or more number</b></label>
+
+		<br>
+		<input type="number" id="number1" class="form-control" placeholder="Number 1">
+        
+        <input type="number" id="number2" class="form-control" placeholder="Number 2">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Send</button>
+			<div id="myDropdown" class="dropdown-content">
+			  <a class="btn btn-success" onclick ="send_add()">Add(+)</a>
+			  <a class="btn btn-success"  onclick ="send_sub()">Sub(-)</a>
+			  <a class="btn btn-success"  onclick ="send_mul()">Mul(×)</a>
+			  <a class="btn btn-success"  onclick ="send_div()">Div(÷)</a>
+			</div>
+		  </div>
+	</center>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
